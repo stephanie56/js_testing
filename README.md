@@ -1,34 +1,20 @@
-# 1. Javascript Testing - Basics
+# 3. Test-driven React + Redux
 
 ## Summary
-- [Tutorial](https://www.youtube.com/watch?v=pnQVrUePcu8&feature=youtu.be)
-- Run newModulesing mocha `mocha --require babel-register`  
+- [Tutorial](http://www.theodo.fr/blog/2016/03/getting-started-with-react-redux-and-immutable-a-test-driven-tutorial-part-1/)
+- This repo will build a TodoMVC app in a test-driven environment
+
+## Todos
+- [ ] Each todo can be active or completed
+- [ ] A todo can be added, edited or deleted
+Todos can be filtered by their status
+- [ ] A counter of active todos is displayed at the bottom
+- [ ] Completed todos can be deleted all at once
 
 ## Testing Dependencies
 - Test runner: Mocha
 - Expectation library: Chai
 
-## ES6 Dependencies
-- babel-register
-- babel-preset-env
-
-## Source code sample
-```javascript
-function newModule(data) {
-  return data;
-}
-export default newModule;
-```
-
-## Testing code sample
-```javascript
-import {expect} from 'chai';
-import newModule from '../src/newModule.js';
-
-describe('task name', () => {
-  it('should return data', () => {
-    expect(newModule('expected value')).to.equal('expected value');
-  });
-});
-
-```
+## JS Dependencies
+- React
+- Redux
