@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import TodoApp from './components/TodoApp';
+
 ReactDOM.render(
-  <h1>Hello world</h1>,
+  <TodoApp />,
   document.getElementById('app')
 );
